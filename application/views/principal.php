@@ -4,7 +4,7 @@
 			<div class="card">
 				<div class="ca
 				rd-action teal lighten-3 center-align white-text">
-					<h3>iniciar sesion</h3>
+					<h3>iniciar sesion ahora</h3>
 				</div>
 				<div class="card-content">
 
