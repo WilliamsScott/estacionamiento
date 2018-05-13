@@ -2,9 +2,8 @@
 	<div class="row">
 		<div class="col s12 m4 offset-m4">
 			<div class="card">
-				<div class="ca
-				rd-action teal lighten-3 center-align white-text">
-					<h3>iniciar sesion pe</h3>
+				<div class="card-action teal lighten-3 center-align white-text">
+					<h3>iniciar sesion </h3>
 				</div>
 				<div class="card-content">
 
