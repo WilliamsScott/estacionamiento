@@ -4,7 +4,7 @@
 			<div class="card">
 				<div class="ca
 				rd-action teal lighten-3 center-align white-text">
-					<h3>iniciar sesion ahora</h3>
+					<h3>iniciar sesion pe</h3>
 				</div>
 				<div class="card-content">
 
@@ -26,7 +26,6 @@
 							</div>
 							<div class="row">
 								<button class="btn waves-effect waves-light right" type="submit" name="action">ingresar
-									<a href="<?php echo base_url()?>Welcome/adminindex">fof</a>
 									<i class="material-icons right">send</i>
 								</button>
 							</div>
