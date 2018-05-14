@@ -12,21 +12,21 @@
 							<div class="row">
 								<div class="input-field">
 									<i class="material-icons prefix">account_circle</i>
-									<input id="nombre" type="text" class="validate">
-									<label for="nombre">cliente</label>
+									<input id="rut_login" type="text" class="validate">
+									<label for="rut_login">rut</label>
 								</div>
 							</div>
 							<div class="row">
 								<div class="input-field ">
 									<i class="material-icons prefix">lock</i>
-									<input id="clave" type="text" class="validate">
-									<label for="clave">clave</label>
+									<input id="clave_login" type="text" class="validate">
+									<label for="clave_login">clave</label>
 								</div>
 							</div>
 							<div class="row">
-								<button class="btn waves-effect waves-light right" type="submit" name="action">ingresar
+								<a  class="btn waves-effect waves-light right" id="bt_login" type="submit" name="action">ingresar
 									<i class="material-icons right">send</i>
-								</button>
+</a>
 							</div>
 
 

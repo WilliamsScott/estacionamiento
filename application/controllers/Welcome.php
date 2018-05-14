@@ -3,21 +3,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
+	public function __construct() {
+		parent::__construct();
+		$this->load->model('login');
+	}
 	public function index()
 	{
                 $this->load->view('templates/header');
@@ -30,4 +19,27 @@ class Welcome extends CI_Controller {
 		$this->load->view('administrador/inicio');
                 $this->load->view('templates/footer');
 	}
+
+	public function login()
+	{
+		$rut = $this->input->post('rut');
+		$clave = $this->input->post('calve');
+		$arrayUser = $this->login->login($rut,md5($clave));
+		if(count($arrayUser)>0){
+			if ($arrayUser[0]->tipo =="administrador") {
+				json_encode(array("msg"=>"administrador"));
+
+				# code...
+			} else {
+
+				json_encode(array("msg"=>"guardia"));
+			}
+			
+
+		}else{
+			echo json_encode(array("msg"=>"usuario no encontrado"));
+
+		}
+	}
+
 }
