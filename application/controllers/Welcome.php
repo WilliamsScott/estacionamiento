@@ -5,7 +5,7 @@ class Welcome extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
-		$this->load->model('login');
+		$this->load->model('Login');
 	}
 	public function index()
 	{
@@ -23,16 +23,16 @@ class Welcome extends CI_Controller {
 	public function login()
 	{
 		$rut = $this->input->post('rut');
-		$clave = $this->input->post('calve');
-		$arrayUser = $this->login->login($rut,md5($clave));
+		$clave = $this->input->post('clave');
+		$arrayUser = $this->Login->login1($rut,md5($clave));
 		if(count($arrayUser)>0){
-			if ($arrayUser[0]->tipo =="administrador") {
-				json_encode(array("msg"=>"administrador"));
+			if ($arrayUser[0]->tipo ==0) {
+				echo json_encode(array("msg"=>"administrador"));
 
 				# code...
 			} else {
 
-				json_encode(array("msg"=>"guardia"));
+				echo json_encode(array("msg"=>"guardia"));
 			}
 			
 
