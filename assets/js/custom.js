@@ -23,7 +23,7 @@ $(function () {
                 if (o.msg == "administrador") {
 
 
-                    window.location = "Welcome/admin";
+                    window.location = "admin";
                 }
             },
             error: function () {

@@ -1,9 +1,10 @@
-<body class="cyan">
-sd
-	<div class="row">
+<body class="blue-grey darken-4 ">
+
+<main>
+<div class="row">
 		<div class="col s12 m4 offset-m4">
 			<div class="card">
-				<div class="card-action teal lighten-3 center-align white-text">
+				<div class="card-action light-blue darken-4  center-align white-text">
 					<h3>iniciar sesion </h3>
 				</div>
 				<div class="card-content">
@@ -20,12 +21,12 @@ sd
 							<div class="row">
 								<div class="input-field ">
 									<i class="material-icons prefix">lock</i>
-									<input id="clave_login" type="text" class="validate">
+									<input id="clave_login" type="password" class="validate">
 									<label for="clave_login">clave</label>
 								</div>
 							</div>
 							<div class="row">
-								<a  class="btn waves-effect waves-light right" id="bt_login" type="submit" name="action">ingresar
+								<a  class="btn waves-effect light-blue darken-4  right" id="bt_login" type="submit" name="action">ingresar
 									<i class="material-icons right">send</i>
 </a>
 							</div>
@@ -46,6 +47,8 @@ sd
 	</div>
 
 
+</main>
+	
 
 
 
@@ -55,4 +58,5 @@ sd
 
 
 
-	</body
+
+
