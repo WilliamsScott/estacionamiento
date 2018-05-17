@@ -19,6 +19,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('administrador/inicio');
                 $this->load->view('templates/footer');
 	}
+	public function registrar()
+	{
+                $this->load->view('templates/header');
+		$this->load->view('administrador/registrar');
+                $this->load->view('templates/footer');
+	}
 
 	public function login()
 	{

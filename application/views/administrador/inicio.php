@@ -1,49 +1,68 @@
 <body class="blue-grey darken-4 white-text">
 
-
+ <!--       INICIO MENU DE NAVEGACION        -->
 	<header></header>
 	<main>
-		<nav class="nav-extended blue-grey darken-4 ">
-			<div class="nav-wrapper">
-				<a href="#" class="brand-logo">
-					<i class="material-icons">cloud</i>
-				</a>
+	<nav>
+    <div class="nav-wrapper blue-grey darken-4">
+      <a href="#!" class="brand-logo ">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="<?php base_url();?>adminindex">Inicio</a></li>
+        <li><a href="badges.html">Perfil</a></li>
+        <li><a href="collapsible.html">Salir</a></li>
+      </ul>
+    </div>
+  </nav>
+<!-- Dropdown item -->
+	<ul id="camaras" class="dropdown-content">
+  <li><a href="#!">en vivo</a></li>
+	<li class="divider"></li>
+  <li><a href="#!">Grabaciones</a></li>
+  <li class="divider"></li>
 
-				<ul id="nav-mobile" class="right hide-on-med-and-down ">
-					<li>
-						<a href="sass.html">inicio</a>
-					</li>
-					<li>
-						<a href="badges.html">perfil</a>
-					</li>
-					<li>
-						<a href="collapsible.html">Salir</a>
-					</li>
-				</ul>
-			</div>
-			<div class="nav-content s12">
-				<ul class="tabs tabs-transparent light-blue darken-4 ">
-					<li class="tab active col s4">
-						<a href="#test1">͏͏͏Estacionamiento</a>
-					</li>
-					<li class="tab col s4">
-						<a class="" href="#test2">Camaras</a>
-					</li>
-					<li class="tab col s4">
-						<a href="#test3">registro</a>
-					</li>
-					<li class="tab col s4">
-						<a href="#test4">personal</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+</ul>
+<ul id="Estacionamiento" class="dropdown-content  light-blue darken-4 ">
+  <li><a href="#!">Estacionamiento</a></li>
+	<li class="divider"></li>
+  <li><a href="#!">Editar</a></li>
+  <li class="divider"></li>
+ 
+</ul>
+<ul id="Registro" class="dropdown-content">
+  <li><a href="#!">en vivo</a></li>
+	<li class="divider"></li>
+  <li><a href="#!">Grabaciones</a></li>
+  <li class="divider"></li>
 
-		<div id="test1" class="col s12">
-			<p>aqui iran todas las opciones del estacionamiento en donde haran muchas cosas interesantes</p>
-		</div>
-		<div id="test2" class="col s12">Comming soon</div>
-		<div id="test3" class="col s12">registros</div>
-		<div id="test4" class="col s12">aqui deberian haber personas</div>
+</ul>
+<ul id="personal" class="dropdown-content">
+  <li><a href="<?php base_url();?>registrar">registrar</a></li>
+	<li class="divider"></li>
+  <li><a href="#!">Guardias</a></li>
+  <li class="divider"></li>
+
+</ul>
+<!-- Dropdown item fin -->
+<nav>
+  <div class="nav-wrapper  light-blue darken-4 ">
+   
+    <ul class="center hide-on-med-and-down ">
+		<li><a class="dropdown-button " href="#!" data-activates="Estacionamiento">Estacionamiento<i class="material-icons right">arrow_drop_down</i></a></li>
+		<li><a class="dropdown-button" href="#!" data-activates="camaras">Cámaras<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="Registro">Registro<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="personal">Personal<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
 
 	</main>
+ <!--       FIN MENU DE NAVEGACION        -->
+
+<script>
+    $('select').material_select();
+    $(".modal-trigger").leanModal();
+ 
+		$('.Estacionamiento').dropdown();
+  
+    
+</script>

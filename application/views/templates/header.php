@@ -18,6 +18,18 @@
   main {
     flex: 1 0 auto;
   }
+  #Estacionamiento{
+   top:64px !important;
+  }
+  #camaras{
+    top:64px !important; 
+  }
+  #Registro{
+    top:64px !important;
+  }
+  #personal{
+    top:64px !important;
+  }
       </style>
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="<?php echo base_url()?>assets/css/materialize.min.css"  media="screen,projection"/>
